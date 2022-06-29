@@ -2,16 +2,16 @@ import React from 'react'
 import './App.css';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import ScrollToTop from "./ScrollToTop";
-import Start from './pages/start.jsx'
-import Guidelines from './pages/guidelines.jsx';
-import Download from './pages/download.jsx';
-import Coherence from './pages/coherence.jsx'
-import Controllability from './pages/controllability.jsx'
-import Predictability from './pages/predictability.jsx'
-import InformationConveying from './pages/informationConveying.jsx'
-import MinimumCollecting from './pages/minimumCollecting.jsx'
-import SocialProof from './pages/socialProof.jsx'
-import ErrorHandling from './pages/errorHandling.jsx'
+import Start from './pages/start.js'
+import Guidelines from './pages/guidelines.js';
+import Download from './pages/download.js';
+import Coherence from './pages/coherence.js'
+import Controllability from './pages/controllability.js'
+import Predictability from './pages/predictability.js'
+import InformationConveying from './pages/informationConveying.js'
+import MinimumCollecting from './pages/minimumCollecting.js'
+import SocialProof from './pages/socialProof.js'
+import ErrorHandling from './pages/errorHandling.js'
 
 export default function App() {
   return (
@@ -38,7 +38,9 @@ export default function App() {
           <Route path='/errorHandling' element={<ErrorHandling />} />
 
         </Routes>
+
         <ScrollToTop />
+
       </BrowserRouter>
     </>
   )
