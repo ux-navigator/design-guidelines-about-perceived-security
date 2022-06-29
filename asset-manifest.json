@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/design-guidelines-about-perceived-security/static/css/main.eec8366a.css",
+    "main.js": "/design-guidelines-about-perceived-security/static/js/main.da15e324.js",
+    "static/js/787.09a9b8da.chunk.js": "/design-guidelines-about-perceived-security/static/js/787.09a9b8da.chunk.js",
+    "index.html": "/design-guidelines-about-perceived-security/index.html",
+    "main.eec8366a.css.map": "/design-guidelines-about-perceived-security/static/css/main.eec8366a.css.map",
+    "main.da15e324.js.map": "/design-guidelines-about-perceived-security/static/js/main.da15e324.js.map",
+    "787.09a9b8da.chunk.js.map": "/design-guidelines-about-perceived-security/static/js/787.09a9b8da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eec8366a.css",
+    "static/js/main.da15e324.js"
+  ]
+}
