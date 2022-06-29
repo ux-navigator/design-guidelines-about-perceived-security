@@ -437,7 +437,7 @@ footer p {
 
   transform: translateY(-4px);
   transition-duration: 0.25s;
-  box-shadow: 0px 4px 24px rgba(45, 45, 48, 0.1);
+  box-shadow: 0px 8px 24px rgba(45, 45, 48, 0.1);
 
 
 }
