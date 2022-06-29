@@ -10,7 +10,6 @@ main {
   font-family: Noto Sans KR, -apple-system, BlinkMacSystemFont, Roboto, Yu Gothic, Helvetica Neue, sans-serif;
 }
 
-
 p {
   margin: 0;
   color: #1E1E1E;
@@ -89,6 +88,10 @@ hr {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+
+.black {
+  color: #1E1E1E;
 }
 
 .blue {

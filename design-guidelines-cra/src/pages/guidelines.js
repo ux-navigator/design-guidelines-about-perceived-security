@@ -9,7 +9,6 @@ import ImagesMinimumCollecting from "../img/Minimum-Collecting.png";
 import ImagesSocialProof from "../img/Social-Proof.png";
 import ImagesErrorHandling from "../img/Error-Handling.png";
 
-
 const Header = () => {
     return (
         <header className="nav" id="header">
@@ -58,38 +57,35 @@ const DesignPrinciplesTitle = () => {
 }
 
 const PrinciplesThumbnail = (props) => {
-    function handleThumbnailClick() {
-        const link = props.link;
-        window.location.href = link;
-    }
-
+    const link = "" + props.link;
     return (
-        <div onClick={handleThumbnailClick} className="principlesThumbnail mr_30 btn">
-            <img className="PrinciplesThumbnail_img" src={props.img} />
-            <h2 className="title_5 mb_8">{props.title}</h2>
-            <div className="PrinciplesThumbnail_description">
-                <p className="body_2 gray_1">{props.description}</p>
+        < Link to={link} >
+            <div className="principlesThumbnail mr_30 btn">
+                <img className="PrinciplesThumbnail_img" src={props.img} />
+                <h2 className="title_5 mb_8 black">{props.title}</h2>
+                <div className="PrinciplesThumbnail_description">
+                    <p className="body_2 gray_1">{props.description}</p>
+                </div>
             </div>
-        </div>
+        </Link >
     );
 
 }
 
 const PrinciplesThumbnail_mr_0 = (props) => {
-    function handleThumbnailClick() {
-        const link = props.link;
-        window.location.href = link;
-    }
-
+    const link = "" + props.link;
     return (
-        <div onClick={handleThumbnailClick} className="principlesThumbnail btn">
-            <img className="PrinciplesThumbnail_img" src={props.img} />
-            <h2 className="title_5 mb_8">{props.title}</h2>
-            <div className="PrinciplesThumbnail_description">
-                <p className="PrinciplesThumbnail_description body_2 gray_1">{props.description}</p>
+        < Link to={link} >
+            <div className="principlesThumbnail btn">
+                <img className="PrinciplesThumbnail_img" src={props.img} />
+                <h2 className="title_5 mb_8 black">{props.title}</h2>
+                <div className="PrinciplesThumbnail_description">
+                    <p className="body_2 gray_1">{props.description}</p>
+                </div>
             </div>
-        </div>
+        </Link >
     );
+
 
 }
 
@@ -104,7 +100,7 @@ const WelcomeToYourComments = () => {
                 <p className="body_2 gray_1">Design Guidelines for Perceived Security에 대해 문의사항이나 개선해야 할 점, 아이디어 등이 있다면 자유롭게 의견을 전달해주세요.</p>
                 <p>&nbsp;</p>
                 <p className="body_2 gray_1">Contact me here.</p>
-                <p className="body_2 blue"><a href="#">jiny1756@gmail.com</a></p>
+                <p className="body_2 blue">jiny1756@gmail.com</p>
             </div>
 
 
@@ -120,7 +116,7 @@ const Footer = () => {
             <div>
                 <hr className="footer_hr" />
                 <p className="body_2 _1">ⓒ Lee Jinyoung 2022 ・</p>
-                <a className="gray_1" href="#">CONTACT</a>
+                <p className="gray_1">CONTACT</p>
             </div>
         </footer>
     );
@@ -134,13 +130,13 @@ const App = () => {
                 <div className="content" id="content1">
                     <DesignPrinciplesTitle />
 
-                    <PrinciplesThumbnail img={ImagesCoherence} title="Coherence" description="일관된 디자인 요소로 일관된 사용자 경험을 제공함으로써 서비스의 완성도를 높게 느끼게 하여 신뢰도를 높이는 방법을 알 수 있습니다." link="coherence.html" />
-                    <PrinciplesThumbnail img={ImagesControllability} title="Controllability" description="사용자가 선택권을 가지고 서비스의 기능이나 정보 수집을 제어할 수 있다는 느낌을 줌으로써 신뢰도를 높이는 방법을 알 수 있습니다." />
-                    <PrinciplesThumbnail_mr_0 img={ImagesPredictability} title="Predictability" description="앞으로 일어날 일에 대해 인지하거나 준비할 수 있게 함으로써 예측하지 못한 당황스러움을 방지하여 신뢰도를 높이는 방법을 알 수 있습니다." />
-                    <PrinciplesThumbnail img={ImagesInformationConveying} title="Information Conveying" description="사용자 입장에서 필요한 정보를 쉽게 인지하고 이해할 수 있게 제공함으로써 사용자가 느낄 수 있는 의문사항을 해소하고 친절함을 느끼게 하고 신뢰도를 높이는 방법을 알 수 있습니다." />
-                    <PrinciplesThumbnail img={ImagesMinimumCollecting} title="Minimum Collecting" description="최소한의 정보를 수집하고 반복 수집하지 않음으로써 개인 정보를 잘 관리한다는 인상을 주어 신뢰도를 높이는 방법을 알 수 있습니다." />
-                    <PrinciplesThumbnail_mr_0 img={ImagesSocialProof} title="Social Proof" description="다수의 사용자들이 이 서비스를 함께 사용하고 있음을 알림으로써 안도감을 주는 방법을 알 수 있습니다." />
-                    <PrinciplesThumbnail img={ImagesErrorHandling} title="Error Handling" description="사용자의 실수나 보안 사고를 방지할 수 있는 안전 장치를 제공하고 오류 발생 시 원인을 인지하고 대처할 수 있도록 피드백 함으로써 불안이나 당황을 줄여 사용자를 안심하게 하는 방법을 알 수 있습니다." />
+                    <PrinciplesThumbnail link="/coherence" img={ImagesCoherence} title="Coherence" description="일관된 디자인 요소로 일관된 사용자 경험을 제공함으로써 서비스의 완성도를 높게 느끼게 하여 신뢰도를 높이는 방법을 알 수 있습니다." />
+                    <PrinciplesThumbnail link="/controllability" img={ImagesControllability} title="Controllability" description="사용자가 선택권을 가지고 서비스의 기능이나 정보 수집을 제어할 수 있다는 느낌을 줌으로써 신뢰도를 높이는 방법을 알 수 있습니다." />
+                    <PrinciplesThumbnail_mr_0 link="/predictability" img={ImagesPredictability} title="Predictability" description="앞으로 일어날 일에 대해 인지하거나 준비할 수 있게 함으로써 예측하지 못한 당황스러움을 방지하여 신뢰도를 높이는 방법을 알 수 있습니다." />
+                    <PrinciplesThumbnail link="/informationConveying" img={ImagesInformationConveying} title="Information Conveying" description="사용자 입장에서 필요한 정보를 쉽게 인지하고 이해할 수 있게 제공함으로써 사용자가 느낄 수 있는 의문사항을 해소하고 친절함을 느끼게 하고 신뢰도를 높이는 방법을 알 수 있습니다." />
+                    <PrinciplesThumbnail link="/minimumCollecting" img={ImagesMinimumCollecting} title="Minimum Collecting" description="최소한의 정보를 수집하고 반복 수집하지 않음으로써 개인 정보를 잘 관리한다는 인상을 주어 신뢰도를 높이는 방법을 알 수 있습니다." />
+                    <PrinciplesThumbnail_mr_0 link="/socialProof" img={ImagesSocialProof} title="Social Proof" description="다수의 사용자들이 이 서비스를 함께 사용하고 있음을 알림으로써 안도감을 주는 방법을 알 수 있습니다." />
+                    <PrinciplesThumbnail link="/errorHandling" img={ImagesErrorHandling} title="Error Handling" description="사용자의 실수나 보안 사고를 방지할 수 있는 안전 장치를 제공하고 오류 발생 시 원인을 인지하고 대처할 수 있도록 피드백 함으로써 불안이나 당황을 줄여 사용자를 안심하게 하는 방법을 알 수 있습니다." />
                     <div className="mb_180"> </div>
                     <WelcomeToYourComments />
 
