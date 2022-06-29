@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/design-guidelines-about-perceived-security/static/css/main.eec8366a.css",
-    "main.js": "/design-guidelines-about-perceived-security/static/js/main.da15e324.js",
+    "main.css": "/design-guidelines-about-perceived-security/static/css/main.810942e7.css",
+    "main.js": "/design-guidelines-about-perceived-security/static/js/main.fcb85e93.js",
     "static/js/787.09a9b8da.chunk.js": "/design-guidelines-about-perceived-security/static/js/787.09a9b8da.chunk.js",
+    "static/media/mockup01.png": "/design-guidelines-about-perceived-security/static/media/mockup01.a4c2daa94dc3262a171c.png",
+    "static/media/part_02_img.png": "/design-guidelines-about-perceived-security/static/media/part_02_img.9fa8723486c2245ccc3e.png",
+    "static/media/part_03_img.png": "/design-guidelines-about-perceived-security/static/media/part_03_img.e0e9ec981215eb2d3eca.png",
+    "static/media/development process.png": "/design-guidelines-about-perceived-security/static/media/development process.f84afa7b9d7c36dde85a.png",
+    "static/media/Minimum-Collecting.png": "/design-guidelines-about-perceived-security/static/media/Minimum-Collecting.de12677f99b9118e9b68.png",
+    "static/media/Social-Proof.png": "/design-guidelines-about-perceived-security/static/media/Social-Proof.54155dcf79b2f45b989b.png",
     "index.html": "/design-guidelines-about-perceived-security/index.html",
-    "main.eec8366a.css.map": "/design-guidelines-about-perceived-security/static/css/main.eec8366a.css.map",
-    "main.da15e324.js.map": "/design-guidelines-about-perceived-security/static/js/main.da15e324.js.map",
+    "main.810942e7.css.map": "/design-guidelines-about-perceived-security/static/css/main.810942e7.css.map",
+    "main.fcb85e93.js.map": "/design-guidelines-about-perceived-security/static/js/main.fcb85e93.js.map",
     "787.09a9b8da.chunk.js.map": "/design-guidelines-about-perceived-security/static/js/787.09a9b8da.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eec8366a.css",
-    "static/js/main.da15e324.js"
+    "static/css/main.810942e7.css",
+    "static/js/main.fcb85e93.js"
   ]
 }
