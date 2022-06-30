@@ -447,8 +447,7 @@ footer p {
 }
 
 #dsign_principles_title {
-  margin-top: 140px;
-  margin-bottom: 150px;
+  margin-top: 120px;
 }
 
 .mb_8 {
@@ -457,6 +456,10 @@ footer p {
 
 .mb_20 {
   margin-bottom: 20px;
+}
+
+.mb_150 {
+  margin-bottom: 150px;
 }
 
 .principlesThumbnail {
