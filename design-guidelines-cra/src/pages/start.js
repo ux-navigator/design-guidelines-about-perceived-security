@@ -438,8 +438,9 @@ const App = () => {
                 <div className="content">
                     <Part_5 />
                     <WelcomeToYourComments />
+                    <Footer />
                 </div>
-                <Footer />
+
             </main>
         </div>
     );

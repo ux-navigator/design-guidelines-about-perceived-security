@@ -23,6 +23,10 @@ h2 {
   margin: 0;
 }
 
+ul {
+  padding: 0;
+}
+
 hr {
   color: #E8E8EC;
   border-color: #E8E8EC;
@@ -55,6 +59,14 @@ hr {
   line-height: 63px;
 }
 
+.title_4 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+}
+
 .title_5 {
   font-family: 'Noto Sans KR';
   font-style: normal;
@@ -82,6 +94,14 @@ hr {
   margin: 0;
 }
 
+.body_3 {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+}
+
 .body_4 {
   font-family: 'Noto Sans KR';
   font-style: normal;
@@ -98,8 +118,16 @@ hr {
   color: #3140E2;
 }
 
+.blue_C {
+  color: #1F74F2;
+}
+
 .gray_1 {
   color: #616161;
+}
+
+.gray_2 {
+  color: #949494;
 }
 
 .txt_center {
@@ -149,6 +177,11 @@ hr {
   width: 100%;
   z-index: 200;
   background-color: hsla(0, 0%, 100%, .95);
+}
+
+.header_line {
+  border-bottom: 1px solid #efefef;
+  box-sizing: border-box;
 }
 
 #gnb {
@@ -394,7 +427,7 @@ hr {
 footer {
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-left: 40px;
+
 }
 
 footer p {
@@ -420,6 +453,10 @@ footer p {
 
 .mb_8 {
   margin-bottom: 8px;
+}
+
+.mb_20 {
+  margin-bottom: 20px;
 }
 
 .principlesThumbnail {
@@ -462,4 +499,66 @@ footer p {
 
 .btn {
   cursor: pointer;
+}
+
+.SideNav {
+  width: 250px;
+  height: 100%;
+  border-right: 1px solid #efefef;
+  box-sizing: border-box;
+  height: calc(100% - 88px);
+  overflow: hidden;
+  position: fixed;
+  top: 88px;
+  z-index: 150;
+  padding-top: 20px;
+  padding-left: 32px;
+}
+
+.nav_li {
+  margin-bottom: 20px;
+  list-style-type: none;
+
+}
+
+.SidoToContents {
+  margin-left: 250px;
+  margin-top: 188px;
+  width: 1002px;
+}
+
+.PrincipleTitle {
+  margin-top: 60px;
+}
+
+.PrincipleTitle_de {
+  margin-top: 16px;
+  width: 562px;
+}
+
+.PrincipleWhy {
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+
+.PrincipleHowTo {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.HowToList {
+  margin-top: 24px;
+  margin-left: 50px;
+}
+
+.HowToList li {
+  margin-bottom: 20px;
+}
+
+.HowToList li::marker {
+  color: #1E1E1E;
+}
+
+.PrincipleHowTo img {
+  width: 1002px;
 }

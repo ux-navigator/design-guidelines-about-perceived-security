@@ -139,9 +139,9 @@ const App = () => {
                     <PrinciplesThumbnail link="/errorHandling" img={ImagesErrorHandling} title="Error Handling" description="사용자의 실수나 보안 사고를 방지할 수 있는 안전 장치를 제공하고 오류 발생 시 원인을 인지하고 대처할 수 있도록 피드백 함으로써 불안이나 당황을 줄여 사용자를 안심하게 하는 방법을 알 수 있습니다." />
                     <div className="mb_180"> </div>
                     <WelcomeToYourComments />
-
+                    <Footer />
                 </div>
-                <Footer />
+
             </main >
         </div >
     );
