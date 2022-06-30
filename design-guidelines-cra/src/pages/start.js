@@ -197,12 +197,6 @@ const Mockup_1 = (props) => {
 }
 
 const Part_2 = (props) => {
-    function handleCardDwnloadClick() {
-        window.open(
-            'https://drive.google.com/file/d/1EDOWIqFFIwdGOzk1jeqfFF-5eKkLr9kx/view?usp=sharing',
-            '_blank' // <- This is what makes it open in a new window.
-        );
-    }
     return (
         <div id="part_02">
             <div id="part_02_wrap">
@@ -220,14 +214,15 @@ const Part_2 = (props) => {
                     </h2>
                 </div>
                 <p className="body_1">핀테크 서비스가 사용자로 하여금 우수한 보안을 인지하게 하려면 어떻게 해야할까요? 그에 대한 해답으로 7가지의 디자인 원칙을 제시합니다.</p>
+                <Link to="/guidelines">
+                    <button className="btn1 btn">자세히 보기
+                        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 1L21 8L15 15" stroke="white" stroke-width="2" />
+                            <path d="M0 8H20.3349" stroke="white" stroke-width="2" />
+                        </svg>
 
-                <button onClick={handleCardDwnloadClick} className="btn1 btn">자세히 보기
-                    <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 1L21 8L15 15" stroke="white" stroke-width="2" />
-                        <path d="M0 8H20.3349" stroke="white" stroke-width="2" />
-                    </svg>
-
-                </button>
+                    </button>
+                </Link>
 
             </div>
             <img src={props.img} />
@@ -236,6 +231,12 @@ const Part_2 = (props) => {
 }
 
 const Part_3 = (props) => {
+    function handleCardDwnloadClick() {
+        window.open(
+            'https://drive.google.com/file/d/1EDOWIqFFIwdGOzk1jeqfFF-5eKkLr9kx/view?usp=sharing',
+            '_blank' // <- This is what makes it open in a new window.
+        );
+    }
     return (
         <div id="part_03">
             <img src={props.img} />
@@ -254,14 +255,14 @@ const Part_3 = (props) => {
                 <p className="body_1">이 가이드라인은 웹페이지 뿐만 아니라 디자인 협업 및 의사결정 시 유용하게 쓰일 수 있도록 아코디언 카드 형태로도 제작되었습니다.
                     누구나 다운받아 출력하여 사용할 수 있습니다.
                 </p>
-                <Link to="/download">
-                    <button className="btn1">카드 다운받기
-                        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 1L21 8L15 15" stroke="white" stroke-width="2" />
-                            <path d="M0 8H20.3349" stroke="white" stroke-width="2" />
-                        </svg>
-                    </button>
-                </Link>
+
+                <button onClick={handleCardDwnloadClick} className="btn1">카드 다운받기
+                    <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 1L21 8L15 15" stroke="white" stroke-width="2" />
+                        <path d="M0 8H20.3349" stroke="white" stroke-width="2" />
+                    </svg>
+                </button>
+
             </div>
 
         </div>
