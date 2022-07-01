@@ -516,6 +516,7 @@ footer p {
   z-index: 150;
   padding-top: 20px;
   padding-left: 32px;
+  background-color: #fff;
 }
 
 .nav_li {
@@ -564,4 +565,17 @@ footer p {
 
 .PrincipleHowTo img {
   width: 1002px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+Link {
+  color: inherit;
+  text-decoration-line: none;
+}
+
+a {
+  text-decoration-line: none;
 }

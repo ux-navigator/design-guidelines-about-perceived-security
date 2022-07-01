@@ -1,12 +1,13 @@
 import React from 'react';
 import '../App.css';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import ImageGroup_73 from "../img/Group_73.png"
 
 
 
 const Header = () => {
     return (
-        <header className="nav" id="header">
+        <header className="nav header_line" id="header">
             <h1 className="icon_home">
                 <Link to="/design-guidelines-about-perceived-security">
 
@@ -40,6 +41,61 @@ const Header = () => {
     );
 }
 
+const SideNav = () => {
+    return (
+        <nav className='SideNav'>
+            <ul>
+                <Link to="/coherence"><li className='body_3 gray_2 nav_li'>Coherence</li></Link>
+                <Link to="/controllability"><li className='body_3 nav_li black bold'>Controllability</li></Link>
+                <Link to="/predictability"><li className='body_3 gray_2 nav_li'>Predictability</li></Link>
+                <Link to="/informationConveying"><li className='body_3 gray_2 nav_li'>Information Conveying</li></Link>
+                <Link to="/minimumCollecting"><li className='body_3 gray_2 nav_li'>Minimum Collecting</li></Link>
+                <Link to="/socialProof"><li className='body_3 gray_2 nav_li'>Social Proof</li></Link>
+                <Link to="/errorHandling"><li className='body_3 gray_2 nav_li'>Error Handling</li></Link>
+            </ul>
+
+        </nav>
+    );
+}
+
+const PrincipleTitle = () => {
+    return (
+        <div className='PrincipleTitle'>
+            <h2 className='title_3'>Controllability</h2>
+            <p className='body_2 gray_1 PrincipleTitle_de'>제어 가능성(Controllability)은 사용자가 선택권을 가지고 서비스의 기능이나 정보 수집을 제어할 수 있다는 느낌을 줌으로써 신뢰도를 높이는 방법입니다.</p>
+        </div>
+
+    );
+}
+
+const PrincipleWhy = () => {
+    return (
+        <div className='PrincipleWhy'>
+            <h2 className='title_4 mb_20'>Why is controllability necessary?</h2>
+            <p className='body_2 gray_1'>사용자는 선택을 주도하지 못하고 서비스의 절차를 그대로 따라야만 하는 느낌을 받으면 쉽게 불안함을 느낍니다.  </p>
+            <p className='body_2 gray_1'>자신이 서비스를 제어하고 있다는 느낌을 받을 때 안정감을 느끼고 신뢰하기 때문에 제어 가능성을 높이는 것이 중요합니다.</p>
+            <p className='body_2 gray_1'>본 가이드라인에서는 구체적인 예시를 통해 제어 가능성을 높이는 방법에 대해 설명하고자 합니다.</p>
+        </div>
+    );
+}
+
+const PrincipleHowTo = (props) => {
+    return (
+        <div className='PrincipleHowTo'>
+            <h2 className='title_4 mb_20'>How to provide controllability?</h2>
+            <p className='body_2 gray_1'>사용자가 선택을 주도한다는 느낌을 받기 위해서 다음과 같은 사항이 적합한지 확인하세요.</p>
+            <ul className='HowToList'>
+                <li className='blue_C'>사용자가 명확하게 내용을 인지하여 어떤 선택을 할 수 있는지 파악하도록 합니다. </li>
+                <li className='blue_C'>UX Writing이 일관되어야 합니다.</li>
+                <li className='blue_C'>다수의 선택지를 제공하여 선택의 폭을 넓혀야 합니다.</li>
+                <li className='blue_C'>최초 선택 이후에도 이를 쉽게 변경이 가능해야 합니다.</li>
+            </ul>
+
+            {/* <img src={props.img} /> */}
+        </div>
+    );
+}
+
 
 
 const Footer = () => {
@@ -58,13 +114,21 @@ const App = () => {
     return (
         <div>
             <Header />
-            <main className="container" id="container">
-                <div className="content" id="content1">
-                    <p>controllability
+            <SideNav />
 
-                    </p>
+            <main className="container" id="container">
+
+
+
+                <div className='SidoToContents'>
+                    <PrincipleTitle />
+                    <PrincipleWhy />
+                    <hr />
+                    <PrincipleHowTo img={ImageGroup_73} />
+                    <Footer />
                 </div>
-                <Footer />
+
+
             </main >
         </div >
     );
