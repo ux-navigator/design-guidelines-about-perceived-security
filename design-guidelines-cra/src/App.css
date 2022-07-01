@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: 'Gilroy-800';
+  font-style: normal;
+  font-weight: 800;
+  src: url("./font/Gilroy-ExtraBold.otf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-400';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./font/Gilroy-Light.otf") format('truetype');
+}
+
+
 main {
   width: 1280px;
   margin: auto;
@@ -36,33 +53,25 @@ hr {
 }
 
 .title_1 {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 800;
+  font-family: 'Gilroy-800';
   font-size: 80px;
   line-height: 96px;
 }
 
 .title_2 {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 800;
+  font-family: 'Gilroy-800';
   font-size: 62px;
   line-height: 140%;
 }
 
 .title_3 {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 800;
+  font-family: 'Gilroy-800';
   font-size: 48px;
   line-height: 63px;
 }
 
 .title_4 {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 800;
+  font-family: 'Gilroy-800';
   font-size: 32px;
   line-height: 39px;
 }
@@ -192,9 +201,8 @@ hr {
   -webkit-text-size-adjust: 100%;
   color: #000;
   font-size: 15px;
-  font-weight: 400;
   line-height: 19px;
-  font-family: 'Gilroy';
+  font-family: 'Gilroy-400';
   margin: 0;
   padding: 0;
   list-style: none;
@@ -207,9 +215,8 @@ hr {
   -webkit-text-size-adjust: 100%;
   color: #000;
   font-size: 15px;
-  font-weight: 400;
   line-height: 19px;
-  font-family: 'Gilroy';
+  font-family: 'Gilroy-400';
   list-style: none;
   margin: 0;
   padding: 0 20px;
@@ -218,7 +225,7 @@ hr {
 
 .dep1 li a {
   -webkit-text-size-adjust: 100%;
-  font-family: 'Gilroy';
+  font-family: 'Gilroy-800';
   list-style: none;
   cursor: pointer;
   text-decoration: none;
@@ -226,7 +233,6 @@ hr {
   box-sizing: border-box;
   display: flex;
   font-size: 17px;
-  font-weight: 700;
   height: 88px;
   line-height: 88px;
   position: relative;
