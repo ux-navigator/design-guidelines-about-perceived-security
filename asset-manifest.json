@@ -1,24 +1,28 @@
 {
   "files": {
-    "main.css": "/design-guidelines-about-perceived-security/static/css/main.b35876b6.css",
-    "main.js": "/design-guidelines-about-perceived-security/static/js/main.a387e81a.js",
+    "main.css": "/design-guidelines-about-perceived-security/static/css/main.905e2f88.css",
+    "main.js": "/design-guidelines-about-perceived-security/static/js/main.5f1d5514.js",
     "static/js/787.09a9b8da.chunk.js": "/design-guidelines-about-perceived-security/static/js/787.09a9b8da.chunk.js",
     "static/media/mockup01.png": "/design-guidelines-about-perceived-security/static/media/mockup01.a4c2daa94dc3262a171c.png",
     "static/media/part_02_img.png": "/design-guidelines-about-perceived-security/static/media/part_02_img.9fa8723486c2245ccc3e.png",
     "static/media/part_03_img.png": "/design-guidelines-about-perceived-security/static/media/part_03_img.e0e9ec981215eb2d3eca.png",
-    "static/media/Group_73.png": "/design-guidelines-about-perceived-security/static/media/Group_73.edbccf0d4e7c2466e281.png",
+    "static/media/coherence_example2.png": "/design-guidelines-about-perceived-security/static/media/coherence_example2.25ff634d32ec81b5b64a.png",
+    "static/media/coherence_example6.png": "/design-guidelines-about-perceived-security/static/media/coherence_example6.ac3d0d88a1b99cf029f8.png",
     "static/media/Gilroy-ExtraBold.otf": "/design-guidelines-about-perceived-security/static/media/Gilroy-ExtraBold.0094146a0505298ed06a.otf",
     "static/media/Gilroy-Light.otf": "/design-guidelines-about-perceived-security/static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
     "static/media/development process.png": "/design-guidelines-about-perceived-security/static/media/development process.f84afa7b9d7c36dde85a.png",
+    "static/media/coherence_example1.png": "/design-guidelines-about-perceived-security/static/media/coherence_example1.8448fc5ec3fef4742ef4.png",
+    "static/media/coherence_example5.png": "/design-guidelines-about-perceived-security/static/media/coherence_example5.a926734873f88fe25e80.png",
+    "static/media/simbol_coherence.png": "/design-guidelines-about-perceived-security/static/media/simbol_coherence.3987debd7b3c01a239b9.png",
     "static/media/Minimum-Collecting.png": "/design-guidelines-about-perceived-security/static/media/Minimum-Collecting.de12677f99b9118e9b68.png",
     "static/media/Social-Proof.png": "/design-guidelines-about-perceived-security/static/media/Social-Proof.54155dcf79b2f45b989b.png",
     "index.html": "/design-guidelines-about-perceived-security/index.html",
-    "main.b35876b6.css.map": "/design-guidelines-about-perceived-security/static/css/main.b35876b6.css.map",
-    "main.a387e81a.js.map": "/design-guidelines-about-perceived-security/static/js/main.a387e81a.js.map",
+    "main.905e2f88.css.map": "/design-guidelines-about-perceived-security/static/css/main.905e2f88.css.map",
+    "main.5f1d5514.js.map": "/design-guidelines-about-perceived-security/static/js/main.5f1d5514.js.map",
     "787.09a9b8da.chunk.js.map": "/design-guidelines-about-perceived-security/static/js/787.09a9b8da.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b35876b6.css",
-    "static/js/main.a387e81a.js"
+    "static/css/main.905e2f88.css",
+    "static/js/main.5f1d5514.js"
   ]
 }
