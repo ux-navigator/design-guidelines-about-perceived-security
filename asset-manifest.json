@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/design-guidelines-about-perceived-security/static/css/main.b35876b6.css",
-    "main.js": "/design-guidelines-about-perceived-security/static/js/main.1cd4f9ba.js",
+    "main.js": "/design-guidelines-about-perceived-security/static/js/main.a387e81a.js",
     "static/js/787.09a9b8da.chunk.js": "/design-guidelines-about-perceived-security/static/js/787.09a9b8da.chunk.js",
     "static/media/mockup01.png": "/design-guidelines-about-perceived-security/static/media/mockup01.a4c2daa94dc3262a171c.png",
     "static/media/part_02_img.png": "/design-guidelines-about-perceived-security/static/media/part_02_img.9fa8723486c2245ccc3e.png",
@@ -14,11 +14,11 @@
     "static/media/Social-Proof.png": "/design-guidelines-about-perceived-security/static/media/Social-Proof.54155dcf79b2f45b989b.png",
     "index.html": "/design-guidelines-about-perceived-security/index.html",
     "main.b35876b6.css.map": "/design-guidelines-about-perceived-security/static/css/main.b35876b6.css.map",
-    "main.1cd4f9ba.js.map": "/design-guidelines-about-perceived-security/static/js/main.1cd4f9ba.js.map",
+    "main.a387e81a.js.map": "/design-guidelines-about-perceived-security/static/js/main.a387e81a.js.map",
     "787.09a9b8da.chunk.js.map": "/design-guidelines-about-perceived-security/static/js/787.09a9b8da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b35876b6.css",
-    "static/js/main.1cd4f9ba.js"
+    "static/js/main.a387e81a.js"
   ]
 }
