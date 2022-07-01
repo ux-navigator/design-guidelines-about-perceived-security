@@ -398,7 +398,7 @@ const WelcomeToYourComments = () => {
     return (
         <div id="WELCOME-TO-YOUR-COMMENTS">
             <div className="left_title">
-                <h2 className="title_3">WELCOME TO</h2>
+                <h2 className="title_3">WELCOME</h2>
                 <h2 className="title_3">YOUR COMMENTS</h2>
             </div>
             <div id="WELCOME-TO-YOUR-COMMENTS_text" className="align_right">
