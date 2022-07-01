@@ -116,7 +116,7 @@ const Footer = () => {
             <div>
                 <hr className="footer_hr" />
                 <p className="body_2 _1">ⓒ Lee Jinyoung 2022 ・</p>
-                <p className="gray_1">CONTACT</p>
+                <p className="gray_1 btn line">CONTACT</p>
             </div>
         </footer>
     );

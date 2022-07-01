@@ -84,6 +84,14 @@ hr {
   line-height: 41px;
 }
 
+.title_6 {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+}
+
 .body_1 {
   font-family: 'Noto Sans KR';
   font-style: normal;
@@ -456,6 +464,10 @@ footer p {
   margin-top: 120px;
 }
 
+.pt_120 {
+  padding-top: 120px;
+}
+
 .mb_8 {
   margin-bottom: 8px;
 }
@@ -463,6 +475,11 @@ footer p {
 .mb_20 {
   margin-bottom: 20px;
 }
+
+.mb_40 {
+  margin-bottom: 40px;
+}
+
 
 .mb_150 {
   margin-bottom: 150px;
@@ -561,6 +578,16 @@ footer p {
   margin-left: 50px;
 }
 
+.HowToList2 {
+  margin-top: 12px;
+  margin-left: 30px;
+
+}
+
+.HowToList2 li {
+  margin-bottom: 4px;
+}
+
 .HowToList li {
   margin-bottom: 20px;
 }
@@ -584,4 +611,30 @@ Link {
 
 a {
   text-decoration-line: none;
+}
+
+.line {
+  text-decoration-line: underline;
+}
+
+.width_1002 {
+  width: 1002px;
+}
+
+.PrincipleTitle {
+  width: 1002px;
+  height: 300px;
+}
+
+.principle_simbol {
+  width: 300px;
+  float: right;
+  display: block;
+  top: 0;
+}
+
+.PrincipleTitle_Wrap {
+  width: 570px;
+  display: inline-block;
+  float: left;
 }

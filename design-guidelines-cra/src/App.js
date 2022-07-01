@@ -13,6 +13,12 @@ import MinimumCollecting from './pages/minimumCollecting.js'
 import SocialProof from './pages/socialProof.js'
 import ErrorHandling from './pages/errorHandling.js'
 
+// //react-scroll을 위한 import
+// import styled from 'styled-components';
+// import Middle from './Middle';
+// import Side from './Side';
+
+
 export default function App() {
   return (
     <>

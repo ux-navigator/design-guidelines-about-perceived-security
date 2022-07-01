@@ -256,7 +256,7 @@ const Part_3 = (props) => {
                     누구나 다운받아 출력하여 사용할 수 있습니다.
                 </p>
 
-                <button onClick={handleCardDwnloadClick} className="btn1">카드 다운받기
+                <button onClick={handleCardDwnloadClick} className="btn1 btn">카드 다운받기
                     <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 1L21 8L15 15" stroke="white" stroke-width="2" />
                         <path d="M0 8H20.3349" stroke="white" stroke-width="2" />
@@ -278,7 +278,7 @@ const Part_4 = (props) => {
                 <p className="body_1 txt_center">먼저, 사용자의 핀테크 사용 경험을 분석하여 보안 인식에 영향을 미치는 디자인 원칙을 도출하였으며,</p>
                 <p className="body_1 txt_center">4명의 핀테크 UX 전문가와의 인터뷰 결과를 종합하여 최종적으로 디자인 가이드라인을 만들었습니다.</p>
                 <p className="body_1 txt_center">이후 디자인 워크샵을 진행하여 유용성과 효과를 검증하였습니다.</p>
-                <div id="part_04_detail_btn"><a className="body_4 gray_1" href="/">더 자세한 개발 프로세스 보기</a></div>
+                <div id="part_04_detail_btn"><div className="body_4 gray_1 btn line">더 자세한 개발 프로세스 보기</div></div>
             </div>
 
         </div>
@@ -419,7 +419,7 @@ const Footer = () => {
             <div>
                 <hr className="footer_hr" />
                 <p className="body_2 _1">ⓒ Lee Jinyoung 2022 ・</p>
-                <p className="gray_1">CONTACT</p>
+                <p className="gray_1 btn line">CONTACT</p>
             </div>
         </footer>
     );

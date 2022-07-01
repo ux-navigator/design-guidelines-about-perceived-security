@@ -1,7 +1,6 @@
 import React from 'react';
 import '../App.css';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import ImageGroup_73 from "../img/Group_73.png"
 
 
 
@@ -104,7 +103,7 @@ const Footer = () => {
             <div>
                 <hr className="footer_hr" />
                 <p className="body_2 _1">ⓒ Lee Jinyoung 2022 ・</p>
-                <a className="gray_1" href="#">CONTACT</a>
+                <a className="gray_1 btn line" href="#">CONTACT</a>
             </div>
         </footer>
     );
@@ -118,13 +117,10 @@ const App = () => {
 
             <main className="container" id="container">
 
-
-
                 <div className='SidoToContents'>
                     <PrincipleTitle />
                     <PrincipleWhy />
                     <hr />
-                    <PrincipleHowTo img={ImageGroup_73} />
                     <Footer />
                 </div>
 
