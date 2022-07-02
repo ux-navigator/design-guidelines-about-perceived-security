@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import ScrollToTop from "./ScrollToTop";
 import Start from './pages/start.js'
 import Guidelines from './pages/guidelines.js';
@@ -12,6 +12,7 @@ import InformationConveying from './pages/informationConveying.js'
 import MinimumCollecting from './pages/minimumCollecting.js'
 import SocialProof from './pages/socialProof.js'
 import ErrorHandling from './pages/errorHandling.js'
+
 
 // //react-scroll을 위한 import
 // import styled from 'styled-components';

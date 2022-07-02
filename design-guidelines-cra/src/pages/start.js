@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ImagesMockup01 from "../img/mockup01.png";
 import ImagesPart02 from "../img/part_02_img.png";
 import ImagesPart03 from "../img/part_03_img.png";
@@ -9,7 +9,6 @@ import ImagesPart04 from "../img/development process.png";
 import Header from "./header"
 import WelcomeYourComments from "./welcomYourComments"
 import Footer from './footer';
-
 
 
 const Main = () => {
@@ -359,8 +358,8 @@ const App = () => {
     return (
         <div>
             <Header />
-            <main className="container" id="container">
-                <div className="content" id="content1">
+            <main className="container" id="container" >
+                <div className="content" id="content1" >
                     <Main />
                     <About />
                     <Part_1 />
