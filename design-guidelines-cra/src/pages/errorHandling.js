@@ -18,7 +18,7 @@ import Footer from './footer';
 const App = () => {
     return (
         <div>
-            <Header />
+            <Header line="header_line" />
             <SideNav id={7} />
             <main className="container" id="container">
                 <div className='SidoToContents'>
