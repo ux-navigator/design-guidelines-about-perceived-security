@@ -560,7 +560,7 @@ footer p {
 
 .PrincipleTitle_de {
   margin-top: 16px;
-  width: 562px;
+  width: 580px;
 }
 
 .PrincipleWhy {
@@ -569,6 +569,11 @@ footer p {
 }
 
 .PrincipleHowTo {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.PrincipleTip {
   margin-top: 80px;
   margin-bottom: 100px;
 }
@@ -589,7 +594,7 @@ footer p {
 }
 
 .HowToList li {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .HowToList li::marker {

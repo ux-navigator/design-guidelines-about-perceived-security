@@ -1,133 +1,44 @@
 import React from 'react';
 import '../App.css';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
+import Simbol from "../img/simbol_minimumCollecting.png"
+import Coherence_example1 from "../img/coherence_example1.png"
+import Coherence_example2 from "../img/coherence_example2.png"
+import Coherence_example5 from "../img/coherence_example5.png"
+import Coherence_example6 from "../img/coherence_example6.png"
 
-
-
-const Header = () => {
-    return (
-        <header className="nav header_line" id="header">
-            <h1 className="icon_home">
-                <Link to="/design-guidelines-about-perceived-security">
-
-                    <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="none" fill-rule="evenodd">
-                            <g fill="#000" fill-rule="nonzero">
-                                <g>
-                                    <g>
-                                        <path
-                                            d="M7.522.124L.224 5.822c-.141.111-.224.28-.224.46v9.634c0 .323.261.584.584.584h6.57v-4.742h1.469V16.5h6.556c.322 0 .584-.261.584-.584V6.282c0-.18-.083-.349-.225-.46L8.241.124c-.212-.165-.508-.165-.72 0z"
-                                            transform="translate(-32.000000, -87.000000) translate(32.000000, 87.000000) translate(7.120000, 6.100000)">
-                                        </path>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-
-                </Link>
-            </h1>
-            <div className="gnb_wrap">
-                <nav id="gnb" className="gnb hover_color">
-                    <ul className="dep1">
-
-                        <li><Link to="/guidelines">Design Guidelines</Link></li>
-                        <li><Link to="/download">Card Download</Link></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    );
-}
-
-const SideNav = () => {
-    return (
-        <nav className='SideNav'>
-            <ul>
-                <Link to="/coherence"><li className='body_3 gray_2 nav_li'>Coherence</li></Link>
-                <Link to="/controllability"><li className='body_3 nav_li gray_2'>Controllability</li></Link>
-                <Link to="/predictability"><li className='body_3 gray_2 nav_li'>Predictability</li></Link>
-                <Link to="/informationConveying"><li className='body_3 gray_2 nav_li'>Information Conveying</li></Link>
-                <Link to="/minimumCollecting"><li className='body_3 nav_li black bold'>Minimum Collecting</li></Link>
-                <Link to="/socialProof"><li className='body_3 gray_2 nav_li'>Social Proof</li></Link>
-                <Link to="/errorHandling"><li className='body_3 gray_2 nav_li'>Error Handling</li></Link>
-            </ul>
-
-        </nav>
-    );
-}
-
-const PrincipleTitle = () => {
-    return (
-        <div className='PrincipleTitle'>
-            <h2 className='title_3'>Minimum Collecting</h2>
-            <p className='body_2 gray_1 PrincipleTitle_de'>최소 수집(Minimum Collecting)은 최소한의 정보를 수집하고 반복 수집하지 않음으로써 개인 정보를 잘 관리한다는 인상을 주어 신뢰도를 높이는 방법입니다.</p>
-        </div>
-
-    );
-}
-
-const PrincipleWhy = () => {
-    return (
-        <div className='PrincipleWhy'>
-            <h2 className='title_4 mb_20'>Why is &#34;Minimum Collecting&#34; necessary?</h2>
-            <p className='body_2 gray_1'>사용자는 선택을 주도하지 못하고 서비스의 절차를 그대로 따라야만 하는 느낌을 받으면 쉽게 불안함을 느낍니다.  </p>
-            <p className='body_2 gray_1'>자신이 서비스를 제어하고 있다는 느낌을 받을 때 안정감을 느끼고 신뢰하기 때문에 제어 가능성을 높이는 것이 중요합니다.</p>
-            <p className='body_2 gray_1'>본 가이드라인에서는 구체적인 예시를 통해 제어 가능성을 높이는 방법에 대해 설명하고자 합니다.</p>
-        </div>
-    );
-}
-
-const PrincipleHowTo = (props) => {
-    return (
-        <div className='PrincipleHowTo'>
-            <h2 className='title_4 mb_20'>How to provide controllability?</h2>
-            <p className='body_2 gray_1'>사용자가 선택을 주도한다는 느낌을 받기 위해서 다음과 같은 사항이 적합한지 확인하세요.</p>
-            <ul className='HowToList'>
-                <li className='blue_C'>사용자가 명확하게 내용을 인지하여 어떤 선택을 할 수 있는지 파악하도록 합니다. </li>
-                <li className='blue_C'>UX Writing이 일관되어야 합니다.</li>
-                <li className='blue_C'>다수의 선택지를 제공하여 선택의 폭을 넓혀야 합니다.</li>
-                <li className='blue_C'>최초 선택 이후에도 이를 쉽게 변경이 가능해야 합니다.</li>
-            </ul>
-
-            {/* <img src={props.img} /> */}
-        </div>
-    );
-}
-
-
-
-const Footer = () => {
-    return (
-        <footer className="footer">
-            <div>
-                <hr className="footer_hr" />
-                <p className="body_2 _1">ⓒ Lee Jinyoung 2022 ・</p>
-                <a className="gray_1 btn line" href="#">CONTACT</a>
-            </div>
-        </footer>
-    );
-}
+import Header from "./header";
+import SideNav from './sideNavGuidelines';
+import PrincipleTitle from './principleTitle';
+import PrincipleWhy from './principleWhy';
+import PrincipleHowTo from './principleHowTo';
+import PrincipleTip from './principleTip';
+import Footer from './footer';
 
 const App = () => {
     return (
         <div>
             <Header />
-            <SideNav />
-
+            <SideNav id={5} />
             <main className="container" id="container">
-
-
-
                 <div className='SidoToContents'>
-                    <PrincipleTitle />
-                    <PrincipleWhy />
+                    <PrincipleTitle title={'Minimum Collecting'} description={'최소 수집(Minimum Collecting)은 최소한의 정보를 수집하고 반복 수집하지 않음으로써 개인 정보를 잘 관리한다는 인상을 주어 신뢰도를 높이는 방법입니다.'} img={Simbol} />
+                    <PrincipleWhy title={'Why is it necessary to minimum collecting?'}
+                        description={'다수의 인증수단을 생성하는 것은 제3자의 침입의 경우의 수를 늘리는 우려로 이어져 불안을 높일 수 있습니다. \n 사전에 제공한 개인 정보의 중복 수집은 서비스의 개인 정보 관리 능력에 불신을 가지게 될 수 있습니다. \n 본 가이드라인에서는 최소 수집을 통해 신뢰도를 높이는 방법에 대해 설명하고자 합니다.'} />
                     <hr />
+                    <PrincipleHowTo title={'How to provide minimum collecting?'}
+                        description={'최소 수집으로 신뢰도를 높이기 위해서 다음과 같은 사항이 적합한지 확인하세요.'}
+                        li1={'사용자의 정보를 최소 단위로 수집해야 합니다.'}
+                        li2={'이미 제공받은 정보에 대해서 중복으로 수집하지 않아야 합니다.'}
+                        littleTitle1={"최소 단위 수집"}
+                        bulletPoint1={"최소한의 정보만 받아 로그인 정보를 한 번에 등록할 수 있도록 해야 한다. \n 서비스의 장기적인 미사용 시 데이터 연동이 해제되도록 설계하는 것이 필요하다. \n 중복 로그인 시 로그인이 끊어지도록 설계하는 것이 필요하다. \n 탈퇴 시 데이터들을 절대 남기지 않는다는 것을 고지 하는 것이 필요하다."}
+                        littleTitle2={"중복 수행 최소화"}
+                        bulletPoint2={"본인 인증 후 서비스 종료 전까지 본인 인증의 키를 계속 가져갈 수 있도록 설계하는 것이 필요하다. \n 주소나 핸드폰번호 등 호출될 수 있는 부분은 호출하여 입력 과정을 최소화 시켜야 한다. \n 인증 수단을 간결화하고 중복 과정을 최대한 제거하여 최소한의 Flow로 절차를 쉽게 수행할 수 있도록 설계해야 한다."}
+                    />
+                    <hr />
+                    <PrincipleTip title={'Try it for controllability'} bulletPoint={'데이터 연동 해제 시 사용자들에게 다시 연동하는 피로감을 줄 수 있기 때문에 데이터 연동 해제 시점를 설계하는 데 주의가 필요하다. \n 연동 해제 시 사용자의 피로도를 높이지 않도록 연동이 해제된 이유를 설명하고 재연동이 쉽고 자연스럽게 이어져야 한다. \n 로그인 후 진행되는 인증 관련한 절차는 꼭 필요한지, 제거할 수 있는지 프로세스를 검토하는 것이 필요하다.'} />
                     <Footer />
                 </div>
-
-
             </main >
         </div >
     );

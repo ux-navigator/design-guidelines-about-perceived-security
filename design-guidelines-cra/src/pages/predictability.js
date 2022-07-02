@@ -1,132 +1,43 @@
 import React from 'react';
 import '../App.css';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
+import Simbol from "../img/simbol_predictability.png"
+import Coherence_example1 from "../img/coherence_example1.png"
+import Coherence_example2 from "../img/coherence_example2.png"
+import Coherence_example5 from "../img/coherence_example5.png"
+import Coherence_example6 from "../img/coherence_example6.png"
 
-
-const Header = () => {
-    return (
-        <header className="nav header_line" id="header">
-            <h1 className="icon_home">
-                <Link to="/design-guidelines-about-perceived-security">
-
-                    <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="none" fill-rule="evenodd">
-                            <g fill="#000" fill-rule="nonzero">
-                                <g>
-                                    <g>
-                                        <path
-                                            d="M7.522.124L.224 5.822c-.141.111-.224.28-.224.46v9.634c0 .323.261.584.584.584h6.57v-4.742h1.469V16.5h6.556c.322 0 .584-.261.584-.584V6.282c0-.18-.083-.349-.225-.46L8.241.124c-.212-.165-.508-.165-.72 0z"
-                                            transform="translate(-32.000000, -87.000000) translate(32.000000, 87.000000) translate(7.120000, 6.100000)">
-                                        </path>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-
-                </Link>
-            </h1>
-            <div className="gnb_wrap">
-                <nav id="gnb" className="gnb hover_color">
-                    <ul className="dep1">
-
-                        <li><Link to="/guidelines">Design Guidelines</Link></li>
-                        <li><Link to="/download">Card Download</Link></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    );
-}
-
-const SideNav = () => {
-    return (
-        <nav className='SideNav'>
-            <ul>
-                <Link to="/coherence"><li className='body_3 gray_2 nav_li'>Coherence</li></Link>
-                <Link to="/controllability"><li className='body_3 nav_li gray_2'>Controllability</li></Link>
-                <Link to="/predictability"><li className='body_3 nav_li black bold'>Predictability</li></Link>
-                <Link to="/informationConveying"><li className='body_3 gray_2 nav_li'>Information Conveying</li></Link>
-                <Link to="/minimumCollecting"><li className='body_3 gray_2 nav_li '>Minimum Collecting</li></Link>
-                <Link to="/socialProof"><li className='body_3 gray_2 nav_li'>Social Proof</li></Link>
-                <Link to="/errorHandling"><li className='body_3 gray_2 nav_li'>Error Handling</li></Link>
-            </ul>
-
-        </nav>
-    );
-}
-
-const PrincipleTitle = () => {
-    return (
-        <div className='PrincipleTitle'>
-            <h2 className='title_3'>Predictability</h2>
-            <p className='body_2 gray_1 PrincipleTitle_de'>얘측 가능성(Predictability)은 앞으로 일어날 일에 대해 인지하거나 준비할 수 있게 함으로써 예측하지 못한 당황스러움을 방지하여 신뢰도를 높이는 방법입니다.</p>
-        </div>
-
-    );
-}
-
-const PrincipleWhy = () => {
-    return (
-        <div className='PrincipleWhy'>
-            <h2 className='title_4 mb_20'>Why is predictability necessary?</h2>
-            <p className='body_2 gray_1'>사용자는 선택을 주도하지 못하고 서비스의 절차를 그대로 따라야만 하는 느낌을 받으면 쉽게 불안함을 느낍니다.  </p>
-            <p className='body_2 gray_1'>자신이 서비스를 제어하고 있다는 느낌을 받을 때 안정감을 느끼고 신뢰하기 때문에 제어 가능성을 높이는 것이 중요합니다.</p>
-            <p className='body_2 gray_1'>본 가이드라인에서는 구체적인 예시를 통해 제어 가능성을 높이는 방법에 대해 설명하고자 합니다.</p>
-        </div>
-    );
-}
-
-const PrincipleHowTo = (props) => {
-    return (
-        <div className='PrincipleHowTo'>
-            <h2 className='title_4 mb_20'>How to provide controllability?</h2>
-            <p className='body_2 gray_1'>사용자가 선택을 주도한다는 느낌을 받기 위해서 다음과 같은 사항이 적합한지 확인하세요.</p>
-            <ul className='HowToList'>
-                <li className='blue_C'>사용자가 명확하게 내용을 인지하여 어떤 선택을 할 수 있는지 파악하도록 합니다. </li>
-                <li className='blue_C'>UX Writing이 일관되어야 합니다.</li>
-                <li className='blue_C'>다수의 선택지를 제공하여 선택의 폭을 넓혀야 합니다.</li>
-                <li className='blue_C'>최초 선택 이후에도 이를 쉽게 변경이 가능해야 합니다.</li>
-            </ul>
-
-            {/* <img src={props.img} /> */}
-        </div>
-    );
-}
-
-
-
-const Footer = () => {
-    return (
-        <footer className="footer">
-            <div>
-                <hr className="footer_hr" />
-                <p className="body_2 _1">ⓒ Lee Jinyoung 2022 ・</p>
-                <a className="gray_1 btn line" href="#">CONTACT</a>
-            </div>
-        </footer>
-    );
-}
+import Header from "./header";
+import SideNav from './sideNavGuidelines';
+import PrincipleTitle from './principleTitle';
+import PrincipleWhy from './principleWhy';
+import PrincipleHowTo from './principleHowTo';
+import PrincipleTip from './principleTip';
+import Footer from './footer';
 
 const App = () => {
     return (
         <div>
             <Header />
-            <SideNav />
-
+            <SideNav id={3} />
             <main className="container" id="container">
-
-
-
                 <div className='SidoToContents'>
-                    <PrincipleTitle />
-                    <PrincipleWhy />
+                    <PrincipleTitle title={'Predictability'} description={'예측 가능성(Predictability)은 앞으로 일어날 일에 대해 인지하거나 준비할 수 있게 함으로써 예측하지 못한 당황스러움을 방지하여 신뢰도를 높이는 방법입니다.'} img={Simbol} />
+                    <PrincipleWhy title={'Why is predictability necessary?'} description={'사용자는 긴 프로세스를 진행할 때 현재 자신이 어느 단계에 있는지, 앞으로 어떤 단계가 남았는지 확인하고 싶어합니다. \n 또한 자신이 예측하지 못한 상황이 발생하였을 때 당황스러움 또는 불쾌감이 유발되어 서비스의 신뢰도에 부정적인 영향을 줄 수 있기 때문에 서비스를 예측할 수 있도록 돕는 것이 중요합니다. \n 본 가이드라인에서는 구체적인 예시를 통해 예측 가능성을 높이는 방법에 대해 설명하고자 합니다.'} />
                     <hr />
+                    <PrincipleHowTo title={'How to provide predictability?'}
+                        description={'사용자가 서비스를 쉽게 예측하게 하기 위해서 다음과 같은 사항이 적합한지 확인하세요.'}
+                        li1={'긴 프로세스를 진행할 때 절차에 대한 인지가 쉽도록 도와야 합니다.'}
+                        li2={'피드포워드 및 피드백을 제공하여 서비스를 충분히 예상하고 준비할 수 있도록 해야 합니다.'}
+                        littleTitle1={"절차 인지"}
+                        bulletPoint1={"긴 프로세스에서는 상단에 progress bar를 제공하여 진척률을 표시하여 사용자가 현재 위치한 지점과 남은 task를 예측할 수 있도록 제공하는 것이 필요하다. \n 현재 절차의 목적과 수행 이유를 명확하게 인식시키기 위해 메인 콘텐츠를 강조하거나 상단에 타이틀을 간결하게 기재한다. \n 로딩 시 화면이 멈추지 않고 처리되고 있는 내용을 인지시키는 것이 필요하다. \n 다음, 완료 등 버튼 텍스트는 task를 예측하는 데 도움이 된다. \n 중요도에 따라 UI를 구분하여 중요한 액션을 할 때의 주의를 기울일 수 있도록 강조하는 것이 필요하다."}
+                        littleTitle2={"피드포워드 / 피드백 제공"}
+                        bulletPoint2={"자동이체 등록 전 안심 문구 제공 등 사용자가 불안해 할 여지가 있는 상황에 대한 사전의 안내를 제공해야 한다. \n 긴 프로세스 내에서 프로세스를 종료하고 싶을 경우를 대비하여 이전버튼 외에 한 번에 종료할 수 있는 종료버튼을 제공하는 것이 필요하다. \n 사용자의 행동 혹은 서비스의 업데이트에 대한 피드백을 최대한 자세히 제공하여 사용자가 서비스를 충분히 인지할 수 있도록 제공한다."}
+                    />
+                    <hr />
+                    <PrincipleTip title={'Try it for controllability'} bulletPoint={'예상치 못한 개인정보 활용은 서비스의 신뢰도에 부정적인 영향을 미칠 수 있으니 사전에 안내가 필요하다.'} />
                     <Footer />
                 </div>
-
-
             </main >
         </div >
     );

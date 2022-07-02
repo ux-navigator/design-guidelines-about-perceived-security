@@ -1,14 +1,14 @@
-import Simbol from "../img/simbol_coherence.png"
 
-const PrincipleTitle = (pros) => {
+
+const PrincipleTitle = (props) => {
     return (
         <div className='PrincipleTitle'>
             <div className="PrincipleTitle_Wrap">
-                <h2 className='title_3'>{pros.title}</h2>
-                <p className='body_2 gray_1 PrincipleTitle_de'>{pros.description}</p>
+                <h2 className='title_3'>{props.title}</h2>
+                <p className='body_2 gray_1 PrincipleTitle_de'>{props.description}</p>
             </div>
             <div>
-                <img className="principle_simbol" src={Simbol} />
+                <img className="principle_simbol" src={props.img} />
             </div>
         </div>
 

@@ -1,132 +1,44 @@
 import React from 'react';
 import '../App.css';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
+import Simbol from "../img/simbol_errorHandling.png"
+import Coherence_example1 from "../img/coherence_example1.png"
+import Coherence_example2 from "../img/coherence_example2.png"
+import Coherence_example5 from "../img/coherence_example5.png"
+import Coherence_example6 from "../img/coherence_example6.png"
 
-
-const Header = () => {
-    return (
-        <header className="nav header_line" id="header">
-            <h1 className="icon_home">
-                <Link to="/design-guidelines-about-perceived-security">
-
-                    <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="none" fill-rule="evenodd">
-                            <g fill="#000" fill-rule="nonzero">
-                                <g>
-                                    <g>
-                                        <path
-                                            d="M7.522.124L.224 5.822c-.141.111-.224.28-.224.46v9.634c0 .323.261.584.584.584h6.57v-4.742h1.469V16.5h6.556c.322 0 .584-.261.584-.584V6.282c0-.18-.083-.349-.225-.46L8.241.124c-.212-.165-.508-.165-.72 0z"
-                                            transform="translate(-32.000000, -87.000000) translate(32.000000, 87.000000) translate(7.120000, 6.100000)">
-                                        </path>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-
-                </Link>
-            </h1>
-            <div className="gnb_wrap">
-                <nav id="gnb" className="gnb hover_color">
-                    <ul className="dep1">
-
-                        <li><Link to="/guidelines">Design Guidelines</Link></li>
-                        <li><Link to="/download">Card Download</Link></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    );
-}
-
-const SideNav = () => {
-    return (
-        <nav className='SideNav'>
-            <ul>
-                <Link to="/coherence"><li className='body_3 gray_2 nav_li'>Coherence</li></Link>
-                <Link to="/controllability"><li className='body_3 gray_2 nav_li '>Controllability</li></Link>
-                <Link to="/predictability"><li className='body_3 gray_2 nav_li'>Predictability</li></Link>
-                <Link to="/informationConveying"><li className='body_3 gray_2 nav_li'>Information Conveying</li></Link>
-                <Link to="/minimumCollecting"><li className='body_3 gray_2 nav_li'>Minimum Collecting</li></Link>
-                <Link to="/socialProof"><li className='body_3 gray_2 nav_li'>Social Proof</li></Link>
-                <Link to="/errorHandling"><li className='body_3 black bold nav_li'>Error Handling</li></Link>
-            </ul>
-
-        </nav>
-    );
-}
-
-const PrincipleTitle = () => {
-    return (
-        <div className='PrincipleTitle'>
-            <h2 className='title_3'>Error Handling</h2>
-            <p className='body_2 gray_1 PrincipleTitle_de'>오류 처리(Error Handling)은 사용자의 실수나 보안 사고를 방지할 수 있는 안전 장치를 제공하고 오류 발생 시 원인을 인지하고 대처할 수 있도록 피드백 함으로써 불안이나 당황을 줄여 사용자를 안심하게 하는 방법입니다.</p>
-        </div>
-
-    );
-}
-
-const PrincipleWhy = () => {
-    return (
-        <div className='PrincipleWhy'>
-            <h2 className='title_4 mb_20'>Why is &#34;Error handling&#34; necessary?</h2>
-            <p className='body_2 gray_1'>사용자는 선택을 주도하지 못하고 서비스의 절차를 그대로 따라야만 하는 느낌을 받으면 쉽게 불안함을 느낍니다.  </p>
-            <p className='body_2 gray_1'>자신이 서비스를 제어하고 있다는 느낌을 받을 때 안정감을 느끼고 신뢰하기 때문에 제어 가능성을 높이는 것이 중요합니다.</p>
-            <p className='body_2 gray_1'>본 가이드라인에서는 구체적인 예시를 통해 제어 가능성을 높이는 방법에 대해 설명하고자 합니다.</p>
-        </div>
-    );
-}
-
-const PrincipleHowTo = (props) => {
-    return (
-        <div className='PrincipleHowTo'>
-            <h2 className='title_4 mb_20'>How to provide controllability?</h2>
-            <p className='body_2 gray_1'>사용자가 선택을 주도한다는 느낌을 받기 위해서 다음과 같은 사항이 적합한지 확인하세요.</p>
-            <ul className='HowToList'>
-                <li className='blue_C'>사용자가 명확하게 내용을 인지하여 어떤 선택을 할 수 있는지 파악하도록 합니다. </li>
-                <li className='blue_C'>UX Writing이 일관되어야 합니다.</li>
-                <li className='blue_C'>다수의 선택지를 제공하여 선택의 폭을 넓혀야 합니다.</li>
-                <li className='blue_C'>최초 선택 이후에도 이를 쉽게 변경이 가능해야 합니다.</li>
-            </ul>
-
-            {/* <img src={props.img} /> */}
-        </div>
-    );
-}
-
-
-
-const Footer = () => {
-    return (
-        <footer className="footer">
-            <div>
-                <hr className="footer_hr" />
-                <p className="body_2 _1">ⓒ Lee Jinyoung 2022 ・</p>
-                <a className="gray_1 btn line" href="#">CONTACT</a>
-            </div>
-        </footer>
-    );
-}
+import Header from "./header";
+import SideNav from './sideNavGuidelines';
+import PrincipleTitle from './principleTitle';
+import PrincipleWhy from './principleWhy';
+import PrincipleHowTo from './principleHowTo';
+import PrincipleTip from './principleTip';
+import Footer from './footer';
 
 const App = () => {
     return (
         <div>
             <Header />
-            <SideNav />
-
+            <SideNav id={7} />
             <main className="container" id="container">
-
-
-
                 <div className='SidoToContents'>
-                    <PrincipleTitle />
-                    <PrincipleWhy />
+                    <PrincipleTitle title={'Error Handling'} description={'오류 처리(Error Handling)는 사용자의 실수나 보안 사고를 방지할 수 있는 안전 장치를 제공하고 오류 발생 시 원인을 인지하고 대처할 수 있도록 피드백 함으로써 불안이나 당황을 줄여 사용자를 안심하게 하는 방법입니다.'} img={Simbol} />
+                    <PrincipleWhy title={'Why is it necessary to error handling?'}
+                        description={'오류 상황이 발생하는 것은 금융 서비스 신뢰도에 치명적인 영향을 줄 수 있으므로 오류 처리를 잘 설계하는 것이 필요합니다. \n 본 가이드라인에서는 구체적인 예시를 통행 오류를 처리하는 방법에 대해 설명하고자 합니다.'} />
                     <hr />
+                    <PrincipleHowTo title={'How to provide serror handling?'}
+                        description={'적절한 오류 처리를 위하여 다음과 같은 사항이 적합한지 확인하세요.'}
+                        li1={'오류가 발생할 수 있는 가능성이 있는 절차를 파악하여 사전에 사용자의 실수 방지하도록 설계합니다.'}
+                        li2={'오류 발생 시 사용자들의 당황스러움을 줄이고 오류를 해결할 수 있도록 돕습니다.'}
+                        littleTitle1={"실수 방지"}
+                        bulletPoint1={"거래의 최종 단계에서 바텀 시트나 팝업 등을 통해 거래 내용을 한 번 더 확인할 수 있는 '예비 거래 정보 확인 단계'를 추가하는 것이 필요하다. \n 거래의 최종 단계에서 본인임을 확인하는 인증 과정이 필요하며, 사용자가 원할 시 인증 과정을 Skip할 수 있도록 하되 초기 설정은 인증 과정이 있도록 설계하는 것이 사용자를 안심시킨다."}
+                        littleTitle2={"오류 상황 시 원인과 대처 방안 안내"}
+                        bulletPoint2={"오류 상황 발생 후 오류가 난 원인 및 대처 방안 등의 안내 메시지를 쉽게 전달해야 한다. "}
+                    />
+                    <hr />
+                    <PrincipleTip title={'Try it for controllability'} bulletPoint={'에러 상황이 발생할 수 있는 Case들을 정의한 후 그에 따른 안내 메세지를 정의한다.'} />
                     <Footer />
                 </div>
-
-
             </main >
         </div >
     );

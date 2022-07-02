@@ -9,41 +9,10 @@ import ImagesMinimumCollecting from "../img/Minimum-Collecting.png";
 import ImagesSocialProof from "../img/Social-Proof.png";
 import ImagesErrorHandling from "../img/Error-Handling.png";
 
-const Header = () => {
-    return (
-        <header className="nav" id="header">
-            <h1 className="icon_home">
-                <Link to="/design-guidelines-about-perceived-security">
+import Header from "./header"
+import WelcomeYourComments from "./welcomYourComments"
+import Footer from './footer';
 
-                    <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="none" fill-rule="evenodd">
-                            <g fill="#000" fill-rule="nonzero">
-                                <g>
-                                    <g>
-                                        <path
-                                            d="M7.522.124L.224 5.822c-.141.111-.224.28-.224.46v9.634c0 .323.261.584.584.584h6.57v-4.742h1.469V16.5h6.556c.322 0 .584-.261.584-.584V6.282c0-.18-.083-.349-.225-.46L8.241.124c-.212-.165-.508-.165-.72 0z"
-                                            transform="translate(-32.000000, -87.000000) translate(32.000000, 87.000000) translate(7.120000, 6.100000)">
-                                        </path>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-
-                </Link>
-            </h1>
-            <div className="gnb_wrap">
-                <nav id="gnb" className="gnb hover_color">
-                    <ul className="dep1">
-
-                        <li><Link to="/guidelines">Design Guidelines</Link></li>
-                        <li><Link to="/download">Card Download</Link></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    );
-}
 
 const DesignPrinciplesTitle = () => {
     return (
@@ -89,39 +58,6 @@ const PrinciplesThumbnail_mr_0 = (props) => {
 
 }
 
-const WelcomeToYourComments = () => {
-    return (
-        <div id="WELCOME-TO-YOUR-COMMENTS" >
-            <div className="left_title">
-                <h2 className="title_3">WELCOME</h2>
-                <h2 className="title_3">YOUR COMMENTS</h2>
-            </div>
-            <div id="WELCOME-TO-YOUR-COMMENTS_text" className="align_right">
-                <p className="body_2 gray_1">Design Guidelines for Perceived Security에 대해 문의사항이나 개선해야 할 점, 아이디어 등이 있다면 자유롭게 의견을 전달해주세요.</p>
-                <p>&nbsp;</p>
-                <p className="body_2 gray_1">Contact me here.</p>
-                <p className="body_2 blue">jiny1756@gmail.com</p>
-            </div>
-
-
-        </div >
-    );
-}
-
-
-
-const Footer = () => {
-    return (
-        <footer className="footer">
-            <div>
-                <hr className="footer_hr" />
-                <p className="body_2 _1">ⓒ Lee Jinyoung 2022 ・</p>
-                <p className="gray_1 btn line">CONTACT</p>
-            </div>
-        </footer>
-    );
-}
-
 const App = () => {
     return (
         <div>
@@ -139,7 +75,7 @@ const App = () => {
                     <PrinciplesThumbnail link="/errorHandling" img={ImagesErrorHandling} title="Error Handling" description="사용자의 실수나 보안 사고를 방지할 수 있는 안전 장치를 제공하고 오류 발생 시 원인을 인지하고 대처할 수 있도록 피드백 함으로써 불안이나 당황을 줄여 사용자를 안심하게 하는 방법을 알 수 있습니다." />
 
                     <div className="mb_180"> </div>
-                    <WelcomeToYourComments />
+                    <WelcomeYourComments />
                     <Footer />
                 </div>
 
