@@ -7,9 +7,9 @@ const PrincipleTitle = (props) => {
                 <h2 className='title_3'>{props.title}</h2>
                 <p className='body_2 gray_1 PrincipleTitle_de'>{props.description}</p>
             </div>
-            <div>
-                <img className="principle_simbol" src={props.img} />
-            </div>
+
+            <img className="principle_simbol" src={props.img} />
+
         </div>
 
     );
