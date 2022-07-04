@@ -333,8 +333,12 @@ hr {
   width: 588px;
 }
 
-#part_02 img {
+.part_02_img {
   float: right;
+  width: 512px;
+}
+
+.part_02_img img {
   width: 512px;
 }
 
@@ -365,12 +369,17 @@ hr {
   margin-bottom: 180px;
 }
 
-#part_03 img {
+.part_03_img {
   display: inline-block;
   width: 512px;
   margin-right: 96px;
 
 }
+
+.part_03_img img {
+  width: 512px;
+}
+
 
 #part_03_title {
   margin-top: 40px;
@@ -641,5 +650,4 @@ a {
 .PrincipleTitle_Wrap {
   width: 570px;
   display: inline-block;
-  float: left;
 }
