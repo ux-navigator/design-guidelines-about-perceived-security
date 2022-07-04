@@ -206,7 +206,7 @@ const Part_2 = (props) => {
         <div id="part_02">
             <div id="part_02_wrap">
                 <motion.div
-                    initial={{ y: 80, opacity: 0 }}
+                    initial={{ opacity: 0 }}
                     whileInView={{
                         y: 0,
                         opacity: 1,
@@ -291,7 +291,7 @@ const Part_3 = (props) => {
                 <img src={props.img} /></motion.div>
             <div id="part_03_wrap">
                 <motion.div
-                    initial={{ y: 80, opacity: 0 }}
+                    initial={{ opacity: 0 }}
                     whileInView={{
                         y: 0,
                         opacity: 1,
