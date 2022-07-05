@@ -21,16 +21,16 @@ export default function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path='/' element={<Start />} />
-          <Route path='/guidelines' element={<Guidelines />} />
-          <Route path='/download' element={<Download />} />
-          <Route path='/coherence' element={<Coherence />} />
-          <Route path='/controllability' element={<Controllability />} />
-          <Route path='/predictability' element={<Predictability />} />
-          <Route path='/informationConveying' element={<InformationConveying />} />
-          <Route path='/minimumCollecting' element={<MinimumCollecting />} />
-          <Route path='/socialProof' element={<SocialProof />} />
-          <Route path='/errorHandling' element={<ErrorHandling />} />
+          <Route path='/design-guidelines-about-perceived-security/' element={<Start />} />
+          <Route path='/design-guidelines-about-perceived-security/guidelines' element={<Guidelines />} />
+          <Route path='/design-guidelines-about-perceived-security/download' element={<Download />} />
+          <Route path='/design-guidelines-about-perceived-security/guidelines/coherence' element={<Coherence />} />
+          <Route path='/design-guidelines-about-perceived-security/guidelines/controllability' element={<Controllability />} />
+          <Route path='/design-guidelines-about-perceived-security/guidelines/predictability' element={<Predictability />} />
+          <Route path='/design-guidelines-about-perceived-security/guidelines/informationConveying' element={<InformationConveying />} />
+          <Route path='/design-guidelines-about-perceived-security/guidelines/minimumCollecting' element={<MinimumCollecting />} />
+          <Route path='/design-guidelines-about-perceived-security/guidelines/socialProof' element={<SocialProof />} />
+          <Route path='/design-guidelines-about-perceived-security/guidelines/errorHandling' element={<ErrorHandling />} />
         </Routes>
         <ScrollToTop />
       </BrowserRouter>

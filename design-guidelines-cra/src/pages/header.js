@@ -8,7 +8,7 @@ const Header = (props) => {
         return (
             <header className="nav header_line" id="header">
                 <h1 className="icon_home">
-                    <Link to="/">
+                    <Link to="/design-guidelines-about-perceived-security/">
 
                         <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
                             <g fill="none" fill-rule="evenodd">
@@ -31,8 +31,8 @@ const Header = (props) => {
                     <nav id="gnb" className="gnb hover_color">
                         <ul className="dep1">
 
-                            <li><Link to="/guidelines">Design Guidelines</Link></li>
-                            <li><Link to="/download">Card Download</Link></li>
+                            <li><Link to="/design-guidelines-about-perceived-security/guidelines">Design Guidelines</Link></li>
+                            <li><Link to="/design-guidelines-about-perceived-security/download">Card Download</Link></li>
                         </ul>
                     </nav>
                 </div>
@@ -42,7 +42,7 @@ const Header = (props) => {
         return (
             <header className="nav" id="header">
                 <h1 className="icon_home">
-                    <Link to="/">
+                    <Link to="/design-guidelines-about-perceived-security/">
 
                         <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
                             <g fill="none" fill-rule="evenodd">
@@ -65,8 +65,8 @@ const Header = (props) => {
                     <nav id="gnb" className="gnb hover_color">
                         <ul className="dep1">
 
-                            <li><Link to="/guidelines">Design Guidelines</Link></li>
-                            <li><Link to="/download">Card Download</Link></li>
+                            <li><Link to="/design-guidelines-about-perceived-security/guidelines">Design Guidelines</Link></li>
+                            <li><Link to="/design-guidelines-about-perceived-security/download">Card Download</Link></li>
                         </ul>
                     </nav>
                 </div>
