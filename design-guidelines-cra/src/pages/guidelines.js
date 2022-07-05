@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ImagesCoherence from "../img/Coherence.png";
 import ImagesControllability from "../img/Controllability.png";
 import ImagesPredictability from "../img/Predictability.png";
@@ -8,8 +8,6 @@ import ImagesInformationConveying from "../img/Information-Conveying.png";
 import ImagesMinimumCollecting from "../img/Minimum-Collecting.png";
 import ImagesSocialProof from "../img/Social-Proof.png";
 import ImagesErrorHandling from "../img/Error-Handling.png";
-
-import Header from "./header"
 import WelcomeYourComments from "./welcomYourComments"
 import Footer from './footer';
 
@@ -61,7 +59,6 @@ const PrinciplesThumbnail_mr_0 = (props) => {
 const App = () => {
     return (
         <div>
-            <Header />
             <main className="container" id="container">
                 <div className="content" id="content1">
                     <DesignPrinciplesTitle />

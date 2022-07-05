@@ -1,5 +1,3 @@
-
-
 const PrincipleTitle = (props) => {
     return (
         <div className='PrincipleTitle'>

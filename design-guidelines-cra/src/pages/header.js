@@ -8,7 +8,7 @@ const Header = (props) => {
         return (
             <header className="nav header_line" id="header">
                 <h1 className="icon_home">
-                    <Link to="/design-guidelines-about-perceived-security">
+                    <Link to="/">
 
                         <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
                             <g fill="none" fill-rule="evenodd">
@@ -42,7 +42,7 @@ const Header = (props) => {
         return (
             <header className="nav" id="header">
                 <h1 className="icon_home">
-                    <Link to="/design-guidelines-about-perceived-security">
+                    <Link to="/">
 
                         <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
                             <g fill="none" fill-rule="evenodd">
