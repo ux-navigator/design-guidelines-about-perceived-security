@@ -204,12 +204,13 @@ const Part_2 = (props) => {
         <div id="part_02">
             <div id="part_02_wrap">
                 <motion.div
-                    initial={{ opacity: 0 }}
+                    initial={{ x: -40, opacity: 0 }}
                     whileInView={{
-                        y: 0,
+                        x: 0,
                         opacity: 1,
                         transition: {
-                            type: "just"
+                            type: "just",
+                            duration: 1
                         }
                     }}
                     viewport={{ once: true, amount: 0 }}>
@@ -219,18 +220,7 @@ const Part_2 = (props) => {
                             fill="#3140E2" />
                         <rect x="35" y="11" width="180" height="1" fill="#3140E2" />
                     </svg>
-                </motion.div>
-                <motion.div
-                    initial={{ y: 160, opacity: 0 }}
-                    whileInView={{
-                        y: 0,
-                        opacity: 1,
-                        transition: {
-                            type: "just",
-                            duration: 0.8
-                        }
-                    }}
-                    viewport={{ once: true, amount: 0 }}>
+
                     <div id="part_02_title">
                         <h2 className="title_3 blue">
                             DESIGN </h2>
@@ -238,6 +228,18 @@ const Part_2 = (props) => {
                             PRINCIPLE
                         </h2>
                     </div>
+                </motion.div>
+                <motion.div
+                    initial={{ x: -80, opacity: 0 }}
+                    whileInView={{
+                        x: 0,
+                        opacity: 1,
+                        transition: {
+                            type: "just",
+                            duration: 0.8
+                        }
+                    }}
+                    viewport={{ once: true, amount: 0 }}>
                     <p className="body_1">핀테크 서비스가 사용자로 하여금 우수한 보안을 인지하게 하려면 어떻게 해야할까요? 그에 대한 해답으로 7가지의 디자인 원칙을 제시합니다.</p>
                     <Link to="/guidelines">
                         <button className="btn1 btn">자세히 보기
@@ -289,13 +291,13 @@ const Part_3 = (props) => {
                 <img src={props.img} /></motion.div>
             <div id="part_03_wrap">
                 <motion.div
-                    initial={{ opacity: 0 }}
+                    initial={{ x: 40, opacity: 0 }}
                     whileInView={{
-                        y: 0,
+                        x: 0,
                         opacity: 1,
                         transition: {
                             type: "just",
-                            duration: 0.8
+                            duration: 1
                         }
                     }}
                     viewport={{ once: true, amount: 0 }}>
@@ -306,11 +308,15 @@ const Part_3 = (props) => {
                             fill="#3140E2" />
                         <rect x="35" y="11" width="180" height="1" fill="#3140E2" />
                     </svg>
+                    <div id="part_03_title">
+                        <h2 className="title_3 blue">FOLDED </h2>
+                        <h2 className="title_3 blue"> CARD</h2>
+                    </div>
                 </motion.div>
                 <motion.div
-                    initial={{ y: 160, opacity: 0 }}
+                    initial={{ x: 40, opacity: 0 }}
                     whileInView={{
-                        y: 0,
+                        x: 0,
                         opacity: 1,
                         transition: {
                             type: "just",
@@ -318,10 +324,7 @@ const Part_3 = (props) => {
                         }
                     }}
                     viewport={{ once: true, amount: 0 }}>
-                    <div id="part_03_title">
-                        <h2 className="title_3 blue">FOLDED </h2>
-                        <h2 className="title_3 blue"> CARD</h2>
-                    </div>
+
                     <p className="body_1">이 가이드라인은 웹페이지 뿐만 아니라 디자인 협업 및 의사결정 시 유용하게 쓰일 수 있도록 아코디언 카드 형태로도 제작되었습니다.
                         누구나 다운받아 출력하여 사용할 수 있습니다.
                     </p>
