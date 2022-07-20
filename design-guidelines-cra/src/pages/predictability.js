@@ -2,10 +2,7 @@ import React from 'react';
 import '../App.css';
 
 import Simbol from "../img/simbol_predictability.png"
-import Coherence_example1 from "../img/coherence_example1.png"
-import Coherence_example2 from "../img/coherence_example2.png"
-import Coherence_example5 from "../img/coherence_example5.png"
-import Coherence_example6 from "../img/coherence_example6.png"
+import Predictability_example1 from "../img/predictability_example1.png"
 
 import Header from "./header";
 import SideNav from './sideNavGuidelines';
@@ -31,6 +28,7 @@ const App = () => {
                         li2={'피드포워드 및 피드백을 제공하여 서비스를 충분히 예상하고 준비할 수 있도록 해야 합니다.'}
                         littleTitle1={"절차 인지"}
                         bulletPoint1={"긴 프로세스에서는 상단에 progress bar를 제공하여 진척률을 표시하여 사용자가 현재 위치한 지점과 남은 task를 예측할 수 있도록 제공하는 것이 필요하다. \n 현재 절차의 목적과 수행 이유를 명확하게 인식시키기 위해 메인 콘텐츠를 강조하거나 상단에 타이틀을 간결하게 기재한다. \n 로딩 시 화면이 멈추지 않고 처리되고 있는 내용을 인지시키는 것이 필요하다. \n 다음, 완료 등 버튼 텍스트는 task를 예측하는 데 도움이 된다. \n 중요도에 따라 UI를 구분하여 중요한 액션을 할 때의 주의를 기울일 수 있도록 강조하는 것이 필요하다."}
+                        example1={Predictability_example1}
                         littleTitle2={"피드포워드 / 피드백 제공"}
                         bulletPoint2={"자동이체 등록 전 안심 문구 제공 등 사용자가 불안해 할 여지가 있는 상황에 대한 사전의 안내를 제공해야 한다. \n 긴 프로세스 내에서 프로세스를 종료하고 싶을 경우를 대비하여 이전버튼 외에 한 번에 종료할 수 있는 종료버튼을 제공하는 것이 필요하다. \n 사용자의 행동 혹은 서비스의 업데이트에 대한 피드백을 최대한 자세히 제공하여 사용자가 서비스를 충분히 인지할 수 있도록 제공한다."}
                     />

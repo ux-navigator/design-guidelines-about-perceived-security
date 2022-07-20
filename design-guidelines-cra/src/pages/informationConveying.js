@@ -2,10 +2,8 @@ import React from 'react';
 import '../App.css';
 
 import Simbol from "../img/simbol_informationConveying.png"
-import Coherence_example1 from "../img/coherence_example1.png"
-import Coherence_example2 from "../img/coherence_example2.png"
-import Coherence_example5 from "../img/coherence_example5.png"
-import Coherence_example6 from "../img/coherence_example6.png"
+import InformationConveying_example1 from "../img/informationConveying_example1.png"
+import InformationConveying_example2 from "../img/informationConveying_example2.png"
 
 import Header from "./header";
 import SideNav from './sideNavGuidelines';
@@ -34,10 +32,12 @@ const App = () => {
                         li4={'한 페이지에 한 번의 주요한 액션을 하도록 설계합니다.'}
                         littleTitle1={"의문 해소"}
                         bulletPoint1={"툴팁을 제공하여 고객센터를 이용하지 않아도 의문이 해소될 수 있도록 제공한다. \n 사용자가 알아야 할 내용을 정확히 기술하고 누락되지 않도록 한다. \n 온보딩 시 기능과 자신의 데이터가 어떻게 사용되는지 이해할 수 있는 페이지를 제공한다."}
+                        example1={InformationConveying_example1}
                         littleTitle2={"친절한 설명"}
                         bulletPoint2={"어려운 정보는 시각화하여 시인성을 높이고 구체적인 예시와 자주하는 질문에 대한 답변 등을 제공한다. \n 고객의 컨텍스트에 따라 변화되는 개인화 콘텐츠를 제공하여 챙겨준다는 느낌을 전달한다. \n 사용자의 이점을 강조한 표현으로 서비스에 애착을 가지도록 한다."}
+                        example2={InformationConveying_example2}
                         littleTitle3={'소통의 창구 증대'}
-                        bulletPoint3={'챗봇이나 카톡 상담 등을 통해 빈번하게 질문되는 문제를 빠르게 대응하는 것이 필요하다. \n 알림을 통해 서비스가 자신을 계속 챙겨주고 있다는 느낌을 줄 수 있다.'}
+                        bulletPoint3={'챗봇이나 채팅 상담 등을 통해 빈번하게 질문되는 문제를 빠르게 대응하는 것이 필요하다. \n 알림을 통해 서비스가 자신을 계속 챙겨주고 있다는 느낌을 줄 수 있다.'}
                         littleTitle4={'원 페이지 원 액션'}
                         bulletPoint4={'한 페이지에 한 번의 주요한 액션을 하도록 설계하는 것은 사용자가 내용을 충분히 이해하고 넘어갈 수 있도록 할 수 있다.'}
                     />
