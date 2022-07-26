@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { Link } from "react-router-dom";
+
 import ImagesMockup01 from "../img/mockup01.png";
 import ImagesPart02 from "../img/part_02_img.png";
 import ImagesPart03 from "../img/part_03_img.png";
@@ -342,6 +343,12 @@ const Part_3 = (props) => {
 }
 
 const Part_4 = (props) => {
+    function ProcessDetailClick() {
+        window.open(
+            'http://www.riss.kr.libproxy.swu.ac.kr/link?id=T16316734',
+            '_blank' // <- This is what makes it open in a new window.
+        );
+    }
     return (
 
         <div id="part_04">
@@ -362,7 +369,7 @@ const Part_4 = (props) => {
                     <p className="body_1 txt_center">먼저, 사용자의 핀테크 사용 경험을 분석하여 보안 인식에 영향을 미치는 디자인 원칙을 도출하였으며,</p>
                     <p className="body_1 txt_center">4명의 핀테크 UX 전문가와의 인터뷰 결과를 종합하여 최종적으로 디자인 가이드라인을 만들었습니다.</p>
                     <p className="body_1 txt_center">이후 디자인 워크샵을 진행하여 유용성과 효과를 검증하였습니다.</p>
-                    <div id="part_04_detail_btn"><div className="body_4 gray_1 btn line">더 자세한 개발 프로세스 보기</div></div>
+                    <div onClick={ProcessDetailClick} id="part_04_detail_btn"><div className="body_4 gray_1 btn line">더 자세한 개발 프로세스 보기</div></div>
                 </div>
             </motion.div>
         </div >
@@ -371,6 +378,7 @@ const Part_4 = (props) => {
 }
 
 const Part_5 = () => {
+
     return (
         <div id="part_05" >
             <motion.div

@@ -650,3 +650,7 @@ a {
   width: 570px;
   display: inline-block;
 }
+
+#WELCOME-TO-YOUR-COMMENTS_text a:visited {
+  color: #3140E2;
+}
