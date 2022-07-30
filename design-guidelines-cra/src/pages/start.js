@@ -242,7 +242,7 @@ const Part_2 = (props) => {
                     }}
                     viewport={{ once: true, amount: 0 }}>
                     <p className="body_1">핀테크 서비스가 사용자로 하여금 우수한 보안을 인지하게 하려면 어떻게 해야할까요? 그에 대한 해답으로 7가지의 디자인 원칙을 제시합니다.</p>
-                    <Link to="/guidelines">
+                    <Link to="/design-guidelines-about-perceived-security/guidelines">
                         <button className="btn1 btn">자세히 보기
                             <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15 1L21 8L15 15" stroke="white" stroke-width="2" />
