@@ -345,7 +345,7 @@ const Part_3 = (props) => {
 const Part_4 = (props) => {
     function ProcessDetailClick() {
         window.open(
-            'http://www.riss.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=818306e22e023626ffe0bdc3ef48d419&keyword=%ED%95%80%ED%85%8C%ED%81%AC%20%EC%84%9C%EB%B9%84%EC%8A%A4%EC%9D%98%20%EC%A7%80%EA%B0%81%EB%90%9C%20%EB%B3%B4%EC%95%88%EC%84%B1%20%ED%96%A5%EC%83%81%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8%20%EC%97%B0%EA%B5%AC',
+            'http://www.riss.kr/search/detail/ssoSkipDetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=818306e22e023626ffe0bdc3ef48d419',
             '_blank' // <- This is what makes it open in a new window.
         );
     }
